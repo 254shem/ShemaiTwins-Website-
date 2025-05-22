@@ -2,70 +2,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shemai Twins - AI Companions</title>
-  <style>
-    body {
-      background: linear-gradient(135deg, #0a0a0a, #1e1b4b);
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-    }
-    .twins-container {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      padding: 2rem;
-    }
-    .twin-card {
-      width: 300px;
-      background: #2e2d2c;
-      border-radius: 2rem;
-      padding: 2rem;
-      border: 1px solid #a78bfa;
-    }
-    .twin-card img {
-      width: 100%;
-      border-radius: 1rem;
-    }
-    .chat-button {
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      background-color: #a78bfa;
-      color: #0a0a0a;
-      border: none;
-      border-radius: 1rem;
-      font-size: 1.2rem;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Shemai Twins - v1.0.2</title>
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(120deg, #1c1c1c, #2d2d2d);
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 60px;
+        }
+        .twin-top-left {
+            position: absolute;
+            top: 20px;
+            left: 80px;
+            width: 150px;
+        }
+        .twin-bottom-right {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 150px;
+        }
+        .catchphrase {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5em;
+            font-style: italic;
+            color: #d0bfff;
+            font-family: 'Cursive', fantasy;
+        }
+        .chat-button {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 12px 24px;
+            background-color: #8e44ad;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Meet the Shemai Twins</h1>
-    <p>Your personal AI companions — Leyma & Liyma</p>
-  </header>
-
-  <main class="twins-container">
-    <article class="twin-card">
-      <img src="leyma.png" alt="Leyma - AI companion"/>
-      <h2>Leyma</h2>
-      <p>Hi there! Let’s vibe.</p>
-    </article>
-    <article class="twin-card">
-      <img src="liyma.png" alt="Liyma - AI companion"/>
-      <h2>Liyma</h2>
-      <p>Hey you! Ready to connect?</p>
-    </article>
-  </main>
-
-  <button class="chat-button" onclick="location.href='https://t.me/ShemaiTwinsBot';">Start Chatting</button>
-
-  <footer>
-    <p>One leaf, one vibe, one growth</p>
-    <p>&copy; 2025 Shemai | AI with Soul</p>
-  </footer>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <img src="images/twin1.png" alt="Twin 1" class="twin-top-left">
+    <img src="images/twin2.png" alt="Twin 2" class="twin-bottom-right">
+    <div class="catchphrase">One Leaf. One Vibe. One Growth.</div>
+    <button class="chat-button">Start Chat</button>
 </body>
 </html>
